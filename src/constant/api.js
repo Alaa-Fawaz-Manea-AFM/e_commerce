@@ -76,7 +76,7 @@ const signInWithGoogle = async (setUser, navigate, setLoadig) => {
     navigate("/");
     toast.success("log in Succesfully");
   } catch (error) {
-    toast.success("log in Failed");
+    toast.error("log in Failed");
   } finally {
     setLoadig(false);
   }
