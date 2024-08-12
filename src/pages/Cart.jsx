@@ -15,7 +15,7 @@ const Cart = () => {
   // increment count product
   function increment(count, uid) {
     if (+count < 10) {
-      updateLocalStorage(count + 1, uid);
+      updateLocalStorage(count + 1, uid,cart, setCart);
     }
     return;
   }
